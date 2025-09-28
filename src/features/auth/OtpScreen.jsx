@@ -56,7 +56,7 @@ const OtpScreen = ({ mobileNumber, onVerified }) => {
       
       {/* Replaced inline style with Tailwind classes */}
       <div className="text-center"> 
-        <h2 className="text-xl font-semibold text-gray-800 mb-2">Welcome to Arrowspeed</h2>
+        <h2 className="text-xl font-semibold text-gray-800 mb-2">Welcome to BusMitra</h2>
         <p className="text-sm text-gray-500 mb-5">
           Enter the verification code sent to <br />
           <strong className="font-semibold text-gray-900">+91 {mobileNumber}</strong>
