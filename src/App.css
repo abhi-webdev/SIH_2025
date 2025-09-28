@@ -1,0 +1,121 @@
+/* ====================================
+   App.css - MOBILE FIRST STYLES
+   ==================================== */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; /* Using a common font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mobile-container {
+  width: 100%;
+  max-width: 450px; /* Constrain for desktop preview */
+  height: 100%;
+  min-height: 700px; /* Minimum height for proper mobile feel on desktop */
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7; /* Light background for screens */
+}
+
+/* --- Colors & Typography --- */
+:root {
+  --primary-color: #172B4D; /* Dark Blue */
+  --secondary-color: #F7F7F7; /* Light Grey */
+  --text-dark: #333;
+  --text-light: #666;
+  --border-color: #ddd;
+}
+
+.screen-padding {
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Common UI Components --- */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.screen-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.screen-subtitle {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  font-size: 13px;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.text-input {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.primary-button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primary-button:hover {
+  background-color: #264673;
+}
+
+/* OTP specific styles */
+.otp-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.otp-input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}

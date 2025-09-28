@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* OPTIONAL: Add Global Mobile-First Overrides here for the container.
+  Tailwind is mobile-first, but we add a few lines to lock the viewport. 
+*/
+body, #root {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
